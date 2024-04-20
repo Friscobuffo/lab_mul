@@ -1,0 +1,11 @@
+img = imread('Luna.jpg');
+filter = fspecial('laplacian');
+filtered_img = imfilter(img, filter);
+figure;
+subplot(1,3,1);
+imshow(img);
+subplot(1,3,2);
+imshow(3*filtered_img);
+output = img-2*filtered_img;
+subplot(1,3,3);
+imshow(output);

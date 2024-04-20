@@ -1,0 +1,12 @@
+img = imread('Mammografia.jpg');
+L = 256;
+output = L-1-img;
+figure;
+subplot(1,3,1);
+imshow(img);
+subplot(1,3,2);
+imshow(output);
+imwrite(output, 'mamm.jpg', 'quality', 30);
+img = imread('mamm.jpg');
+subplot(1,3,3);
+imshow(img);
