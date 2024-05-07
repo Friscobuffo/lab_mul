@@ -1,6 +1,7 @@
 img = imread("noise1.bmp");
 imshow(img);
 cropped = imcrop(img, [1, 1, 50, 80]);
+figure(2);
 imhist(cropped)
 
 %%
